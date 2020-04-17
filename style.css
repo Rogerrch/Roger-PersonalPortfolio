@@ -7,7 +7,7 @@
 #navbar a:hover {
   color: #fafafa;
   background-color: #27a1e3;
-  transition: backgrond-color, 0.4s;
+  transition: 0.4s;
 }
 
 /* Selects any <a> element when "hovered" */
@@ -25,7 +25,7 @@ body {
 #navbar {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #21233c;
   position: fixed;
   z-index: 10;
