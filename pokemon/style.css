@@ -1,3 +1,5 @@
+/*font-family: 'Noto Sans JP', sans-serif;*/
+
 body {
   margin: 0;
 }
@@ -11,15 +13,43 @@ header {
   z-index: 10;
   background-color: #051d5b;
   position: fixed;
-  
+  border-bottom: solid 10px #fec80e;
 }
+
+.PokemonLogo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  font-size: 2rem;
+  transform: scale(.8);
+}
+
+
+figcaption {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: white;
+  position: relative;
+    bottom: 40px;
+    height: 10px;
+    max-width: 200;
+    text-shadow: 
+    -2px -2px 0px #2c64b7,
+    2px -2px 0px #2c64b7,
+     -2px 2px 0px #2c64b7,
+     2px 2px 0px #2c64b7;
+}
+
+
 /* nav */
 #navbar {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  background-color: #21233c;
-  position: static;
+  width: auto;
+  position: relative;
+  bottom: 30px;
+    height: 10px;
   z-index: 10;
   filter: drop-shadow( .2mm 1mm .0mm #27a1e3);
 }
@@ -61,8 +91,13 @@ p {
   transform: rotateY(180deg);
 }
 
+.card.is-scaled {
+  transform: scale(1.3);
+}
+
+
 .card__face {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   color: white;
@@ -73,6 +108,7 @@ p {
 }
 
 .card__face--front {
+  margin: 0;
   background-image: url(../images/base2.jpg);
   box-shadow: 
   -3px -3px 4px #051d5b inset,
@@ -84,9 +120,10 @@ p {
 }
 
 .card__face--back {
-  background: blue;
+  background: green;
   transform: rotateY(180deg);
-  
+  border: solid 8px #fec80e;
+ 
 }
 
 .card__face ul {
