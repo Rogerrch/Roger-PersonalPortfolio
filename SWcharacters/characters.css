@@ -67,6 +67,11 @@ Button {
   border-color: #fafafa;
   color: #fafafa;
 }
+
+#maleButton:focus {
+  outline-style: none;
+}
+
 #maleButton:active {
   background-color: #27a1e3;
   box-shadow: inset 0px 0px 10px #ffffff;
@@ -98,6 +103,11 @@ Button {
   border-color: #fafafa;
   color: #fafafa;
 }
+
+#otherButton:focus {
+  outline-style: none;
+}
+
 #otherButton:active {
   background-color: #27a1e3;
   box-shadow: inset 0px 0px 10px #ffffff;
