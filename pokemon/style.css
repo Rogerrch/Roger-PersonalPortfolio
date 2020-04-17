@@ -4,19 +4,20 @@ header {
   align-items: center;
 }
 
+p {
+  
+}
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
 }
 
 .scene {
   width: 200px;
   height: 260px;
   border: 1px solid #CCC;
-  margin: 20px 10px;
+  margin: 28px 12px;
   perspective: 600px;
   border-radius: 30px;
 }
@@ -46,7 +47,6 @@ header {
 }
 
 .card__face--front {
-  background: red;
   background-image: url(../images/base2.jpg);
   box-shadow: 
   -3px -3px 4px #051d5b inset,
@@ -54,6 +54,7 @@ header {
    -3px 3px 4px #051d5b inset,
    3px 3px 4px #051d5b inset;
   border: solid 8px #fec80e;
+  filter: drop-shadow(0.5mm 1mm 0.6mm #051d5b);
 }
 
 .card__face--back {
@@ -74,4 +75,8 @@ img {
   drop-shadow(-2px -2px 0 black);
 filter: drop-shadow(2px 2px 0 black) 
 drop-shadow(-1px -2px 0 black);
+}
+
+figure img {
+  filter: none;
 }
