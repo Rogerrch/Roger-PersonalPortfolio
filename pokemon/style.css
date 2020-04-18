@@ -155,7 +155,7 @@ p {
    2px 2px 0px #051d5b inset;
   border-top: solid 4px #fec80e;
   border-bottom: solid 4px #fec80e;
-  filter: drop-shadow(0.2mm 1mm 0.2mm #051d5b);
+  filter: drop-shadow(0mm 2px 2px #051d5b);
 
 }
 
@@ -187,14 +187,29 @@ p {
 }
 
 .card__face--back {
+  margin: 0;
   background: green;
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
+  background-image: url(../images/back1.jpg);
 }
 
 .card__face ul {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  top: 138px;
   text-align: left;
   list-style-type: square;
+  color: black;
+}
+
+.card__face h4 {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  top: 140px;
+  text-align: center;
+  list-style-type: square;
+  color: black;
 }
 
 img {
@@ -223,11 +238,11 @@ figure img {
 .stars {
   background-image: 
     url(../images/type/all_tint3.png),
-    radial-gradient(2px 2px at 40px 70px, #eed26d, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #3d80e4, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #6dee82, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #ee6d6d, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #e69c48, rgba(0,0,0,0));
+    radial-gradient(2px 2px at 40px 70px, #85784d, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #3e577e, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #407449, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #704141, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #774b23, rgba(0,0,0,0));
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: zoom 6s infinite;
