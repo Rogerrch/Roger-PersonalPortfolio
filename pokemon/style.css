@@ -2,6 +2,11 @@
 
 body {
   margin: 0;
+  background-image: linear-gradient(20deg, #f5e7dc75 0%, #64428c85 85%);
+ 
+}
+.headcase {
+  
 }
 
 header {
@@ -10,8 +15,12 @@ header {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  z-index: 10;
   background-color: #051d5b;
+  background-image: url(../images/starburst .png);
+  background-repeat: no-repeat;
+  
+  background-position: center;
+  z-index: 10;
   position: fixed;
   border-bottom: solid 10px #fec80e;
 }
@@ -54,26 +63,28 @@ figcaption {
   filter: drop-shadow( .2mm 1mm .0mm #27a1e3);
 }
 
-p {
-  
+.navbuttons {
+  margin-left: 10px;
 }
 
+/*card mat*/
 .space {
-  height: 320px
+  height: 260px
 }
 
-
+.wrapper {
+  margin-right: 2.6rem;
+}
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .scene {
   width: 200px;
   height: 260px;
-  border: 1px solid #CCC;
-  margin: 28px 12px;
+  margin: 28px 0px 28px 40px;
   perspective: 600px;
   border-radius: 30px;
 }
@@ -84,18 +95,13 @@ p {
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
-  position: relative;
+  position: absolute;
 }
 
 .card.is-flipped {
   transform: rotateY(180deg);
+  
 }
-
-.card.is-scaled {
-  transform: scale(1.3);
-}
-
-
 .card__face {
   position: fixed;
   width: 100%;
@@ -123,7 +129,6 @@ p {
   background: green;
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
- 
 }
 
 .card__face ul {
