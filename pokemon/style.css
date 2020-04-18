@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(20deg, #f5e7dc75 0%, #64428c85 85%);
- 
+  /*background-image: linear-gradient(20deg, #fec80e75 0%, #27a1e385 85%);*/
+ background-color: #031031;
 }
 .headcase {
   
@@ -18,7 +18,6 @@ header {
   background-color: #051d5b;
   background-image: url(../images/starburst.png);
   background-repeat: no-repeat;
-  
   background-position: center;
   z-index: 10;
   position: fixed;
@@ -35,6 +34,7 @@ header {
   bottom: 20px;
   font-size: 2rem;
   transform: scale(.8);
+  filter: drop-shadow( .2mm 1px .0mm #27a1e3);
 }
 
 
@@ -57,14 +57,51 @@ figcaption {
 #navbar {
   width: auto;
   position: relative;
-  bottom: 30px;
-    height: 10px;
+  bottom: 40px;
+    height: 8px;
   z-index: 10;
   filter: drop-shadow( .2mm 1mm .0mm #27a1e3);
 }
-
+/*Nav Buttons*/
 .navbuttons {
   margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #fec80e;
+  text-shadow: 
+  -1px -1px 1px #051d5b,
+  1px -1px 1px #051d5b,
+   -1px 1px 1px #051d5b,
+   1px 1px 1px #051d5b;
+}
+
+#startButton {
+  all: unset;
+  background-color: #73a8f7;
+  padding: 0px 10px 0px 20px;
+  border-radius: 5px;
+  box-shadow: 
+  -2px -2px 0px #051d5b inset,
+  2px -2px 0px #051d5b inset,
+   -2px 2px 0px #051d5b inset,
+   2px 2px 0px #051d5b inset;
+  border: solid 2px #2c64b7
+}
+
+#newButton {
+  all: unset;
+  background-color: #73a8f7;
+  padding: 0px 20px 0px 10px;
+  border-radius: 5px;
+  box-shadow: 
+  -2px -2px 0px #051d5b inset,
+  2px -2px 0px #051d5b inset,
+   -2px 2px 0px #051d5b inset,
+   2px 2px 0px #051d5b inset;
+  border: solid 2px #2c64b7
 }
 
 /*card mat*/
@@ -96,6 +133,30 @@ figcaption {
   transform-style: preserve-3d;
   cursor: pointer;
   position: absolute;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  text-shadow: 
+    -1px -1px 0px #051d5b,
+    1px -1px 0px #051d5b,
+     -1px 1px 0px #051d5b,
+     1px 1px 0px #051d5b;
+  position: relative;
+  bottom: 26px;
+  padding: 0 0 4px 0;
+  background-color: #2c64b7;
+  background-image: linear-gradient(60deg, #051d5b, #27a1e3, #98c8e2, #27a1e3, #051d5b,#051d5b, #051d5b, #27a1e3, #98c8e2, #27a1e3);
+  box-shadow: 
+  -2px -2px 0px #051d5b inset,
+  2px -2px 0px #051d5b inset,
+   -2px 2px 0px #051d5b inset,
+   2px 2px 0px #051d5b inset;
+  border-top: solid 4px #fec80e;
+  border-bottom: solid 4px #fec80e;
+  filter: drop-shadow(0.2mm 1mm 0.2mm #051d5b);
+
 }
 
 .card.is-flipped {
@@ -147,4 +208,66 @@ drop-shadow(-1px -2px 0 black);
 
 figure img {
   filter: none;
+}
+
+/* stars */
+#space, .stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars {
+  background-image: 
+    url(../images/type/all_tint3.png),
+    radial-gradient(2px 2px at 40px 70px, #eed26d, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #3d80e4, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #6dee82, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #ee6d6d, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #e69c48, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 6s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  } 
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
 }

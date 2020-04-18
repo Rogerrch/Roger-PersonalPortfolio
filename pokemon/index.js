@@ -67,9 +67,9 @@ function populateCardFront(pokemon) {
 function getImageFileName(pokemon) {
   if (pokemon.id < 10) {
     return `00${pokemon.id}`
-  } else if (pokemon.id > 9 && pokemon.id < 100) {
+  } else if (pokemon.id > 9 && pokemon.id < 99) {
     return `0${pokemon.id}`
-  } else return `pokeball`
+  } else return `Thormon`
 }
 
 function populateCardBack(pokemon) {
