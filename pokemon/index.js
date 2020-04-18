@@ -88,6 +88,7 @@ function populateCardBack(pokemon) {
   cardBack.appendChild(moveList)
   return cardBack
 }
+//function preloadImage(url) {var img=new Image(../images/back1.jpg); img.src=url;}
 
 function getPokemonMoves(pokemon, levelLearnedAt) {
   //console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)

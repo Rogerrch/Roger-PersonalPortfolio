@@ -21,6 +21,8 @@ header {
   background-position: center;
   z-index: 10;
   position: fixed;
+  box-shadow: 
+  -0px -5px 0px #041130 inset;
   border-bottom: solid 10px #fec80e;
 }
 
@@ -34,7 +36,7 @@ header {
   bottom: 20px;
   font-size: 2rem;
   transform: scale(.8);
-  filter: drop-shadow( .2mm 1px .0mm #27a1e3);
+  filter: drop-shadow( .2mm 1px .0mm #27a1e385);
 }
 
 
@@ -110,7 +112,7 @@ figcaption {
 }
 
 .wrapper {
-  margin-right: 2.6rem;
+  margin-right: 3.4rem;
 }
 .pokeContainer {
     display: flex;
@@ -138,6 +140,7 @@ figcaption {
 p {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
+  font-style: italic;
   text-shadow: 
     -1px -1px 0px #051d5b,
     1px -1px 0px #051d5b,
@@ -161,8 +164,8 @@ p {
 
 .card.is-flipped {
   transform: rotateY(180deg);
-  
 }
+
 .card__face {
   position: fixed;
   width: 100%;
@@ -188,10 +191,9 @@ p {
 
 .card__face--back {
   margin: 0;
-  background: green;
+  background-image: url(../images/back1.jpg);
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
-  background-image: url(../images/back1.jpg);
 }
 
 .card__face ul {
