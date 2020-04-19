@@ -194,6 +194,11 @@ p {
   background-image: url(../images/back1.jpg);
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
+  backface-visibility: visible;
+}
+
+.card.is-flipped .card__face--back {
+  backface-visibility: hidden;
 }
 
 .card__face ul {
