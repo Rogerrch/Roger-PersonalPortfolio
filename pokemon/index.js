@@ -56,7 +56,7 @@ function populateCardFront(pokemon) {
   cardFront.className = 'card__face card__face--front'
   
   let frontImage = document.createElement('img')
-  frontImage.src = `../images/${getImageFileName(pokemon)}.png`
+  frontImage.src = getImageFileName(pokemon)
   let frontLabel = document.createElement('p') 
   frontLabel.textContent = `${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(1)}`
   cardFront.appendChild(frontImage)
@@ -65,12 +65,16 @@ function populateCardFront(pokemon) {
 }
 
 function getImageFileName(pokemon) {
-  if (pokemon.id < 10) {
-    return `00${pokemon.id}`
-  } else if (pokemon.id > 9 && pokemon.id < 99) {
-    return `0${pokemon.id}`
-  } else return `Thormon`
+  return `../images/${pokemon.id <= 150 ? pokemon.id.toString().padStart(3, '0') : 'Thormon'}.png`;
 }
+
+  // function getImageFileName(pokemon) {
+//   if (pokemon.id < 10) {
+//     return `00${pokemon.id}`
+//   } else if (pokemon.id > 9 && pokemon.id < 99) {
+//     return `0${pokemon.id}`
+//   } else return `Thormon`
+// }
 
 function populateCardBack(pokemon) {
   let cardBack = document.createElement('div')

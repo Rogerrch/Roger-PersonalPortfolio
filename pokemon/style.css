@@ -240,11 +240,11 @@ figure img {
 .stars {
   background-image: 
     url(../images/type/all_tint3.png),
-    radial-gradient(2px 2px at 40px 70px, #85784d, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #3e577e, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #407449, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #704141, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #774b23, rgba(0,0,0,0));
+    radial-gradient(2px 2px at 40px 70px, #85784d75, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #3e577e80, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #40744975, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #70414180, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #774b2385, rgba(0,0,0,0));
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: zoom 6s infinite;
