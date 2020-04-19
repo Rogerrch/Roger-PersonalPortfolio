@@ -1,9 +1,13 @@
 /*font-family: 'Noto Sans JP', sans-serif;*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   /*background-image: linear-gradient(20deg, #fec80e75 0%, #27a1e385 85%);*/
- background-color: #031031;
+  background-color: #031031;
 }
 .headcase {
   
@@ -19,11 +23,12 @@ header {
   background-image: url(../images/starburst.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   z-index: 10;
   position: fixed;
-  box-shadow: 
-  -0px -5px 0px #041130 inset;
+  box-shadow: -0px -5px 0px #041130 inset;
   border-bottom: solid 10px #fec80e;
+  filter: drop-shadow(0 40px 18px #041130);
 }
 
 .PokemonLogo {
@@ -35,49 +40,41 @@ header {
   position: relative;
   bottom: 20px;
   font-size: 2rem;
-  transform: scale(.8);
-  filter: drop-shadow( .2mm 1px .0mm #27a1e385);
+  transform: scale(0.8);
+  filter: drop-shadow(0.2mm 1px 0mm #27a1e385);
 }
-
 
 figcaption {
   font-family: 'Noto Sans JP', sans-serif;
   color: white;
   position: relative;
-    bottom: 40px;
-    height: 10px;
-    max-width: 200;
-    text-shadow: 
-    -2px -2px 0px #2c64b7,
-    2px -2px 0px #2c64b7,
-     -2px 2px 0px #2c64b7,
-     2px 2px 0px #2c64b7;
+  bottom: 40px;
+  height: 10px;
+  max-width: 200;
+  text-shadow: -2px -2px 0px #2c64b7, 2px -2px 0px #2c64b7, -2px 2px 0px #2c64b7,
+    2px 2px 0px #2c64b7;
 }
-
 
 /* nav */
 #navbar {
   width: auto;
   position: relative;
   bottom: 40px;
-    height: 8px;
+  height: 8px;
   z-index: 10;
-  filter: drop-shadow( .2mm 1mm .0mm #27a1e3);
+  filter: drop-shadow(0.2mm 1mm 0mm #27a1e3);
 }
 /*Nav Buttons*/
 .navbuttons {
-  margin-left: 10px;
+  margin-left: 1.1rem;
   margin-bottom: 20px;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   font-style: italic;
   font-size: 1.2rem;
   color: #fec80e;
-  text-shadow: 
-  -1px -1px 1px #051d5b,
-  1px -1px 1px #051d5b,
-   -1px 1px 1px #051d5b,
-   1px 1px 1px #051d5b;
+  text-shadow: -1px -1px 1px #051d5b, 1px -1px 1px #051d5b, -1px 1px 1px #051d5b,
+    1px 1px 1px #051d5b;
 }
 
 #startButton {
@@ -85,12 +82,9 @@ figcaption {
   background-color: #73a8f7;
   padding: 0px 10px 0px 20px;
   border-radius: 5px;
-  box-shadow: 
-  -2px -2px 0px #051d5b inset,
-  2px -2px 0px #051d5b inset,
-   -2px 2px 0px #051d5b inset,
-   2px 2px 0px #051d5b inset;
-  border: solid 2px #2c64b7
+  box-shadow: -2px -2px 0px #051d5b inset, 2px -2px 0px #051d5b inset,
+    -2px 2px 0px #051d5b inset, 2px 2px 0px #051d5b inset;
+  border: solid 2px #2c64b7;
 }
 
 #newButton {
@@ -98,33 +92,33 @@ figcaption {
   background-color: #73a8f7;
   padding: 0px 20px 0px 10px;
   border-radius: 5px;
-  box-shadow: 
-  -2px -2px 0px #051d5b inset,
-  2px -2px 0px #051d5b inset,
-   -2px 2px 0px #051d5b inset,
-   2px 2px 0px #051d5b inset;
-  border: solid 2px #2c64b7
+  box-shadow: -2px -2px 0px #051d5b inset, 2px -2px 0px #051d5b inset,
+    -2px 2px 0px #051d5b inset, 2px 2px 0px #051d5b inset;
+  border: solid 2px #2c64b7;
 }
 
 /*card mat*/
-.space {
-  height: 260px
+
+.cardpack {
+  padding: 3.4rem;
+  position: fixed; 
+  overflow-y: scroll;
+  top: 250px; left: 0; right: 0; bottom: 0;
 }
 
-.wrapper {
-  margin-right: 3.4rem;
-}
+
 .pokeContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  gap: 2.8rem 1rem; /* gap between columns and rows */
+  justify-items: center;
+  
 }
 
 .scene {
-  width: 200px;
-  height: 260px;
-  margin: 28px 0px 28px 40px;
-  perspective: 600px;
+  width: 216px;
+  height: 280px;
+  perspective: 1000px;
   border-radius: 30px;
 }
 
@@ -141,25 +135,30 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-style: italic;
-  text-shadow: 
-    -1px -1px 0px #051d5b,
-    1px -1px 0px #051d5b,
-     -1px 1px 0px #051d5b,
-     1px 1px 0px #051d5b;
+  text-shadow: -1px -1px 0px #051d5b, 1px -1px 0px #051d5b, -1px 1px 0px #051d5b,
+    1px 1px 0px #051d5b;
   position: relative;
   bottom: 26px;
   padding: 0 0 4px 0;
   background-color: #2c64b7;
-  background-image: linear-gradient(60deg, #051d5b, #27a1e3, #98c8e2, #27a1e3, #051d5b,#051d5b, #051d5b, #27a1e3, #98c8e2, #27a1e3);
-  box-shadow: 
-  -2px -2px 0px #051d5b inset,
-  2px -2px 0px #051d5b inset,
-   -2px 2px 0px #051d5b inset,
-   2px 2px 0px #051d5b inset;
+  background-image: linear-gradient(
+    60deg,
+    #051d5b,
+    #27a1e3,
+    #98c8e2,
+    #27a1e3,
+    #051d5b,
+    #051546,
+    #051d5b,
+    #27a1e3,
+    #98c8e2,
+    #27a1e3
+  );
+  box-shadow: -2px -2px 0px #051d5b inset, 2px -2px 0px #051d5b inset,
+    -2px 2px 0px #051d5b inset, 2px 2px 0px #051d5b inset;
   border-top: solid 4px #fec80e;
   border-bottom: solid 4px #fec80e;
-  filter: drop-shadow(0mm 2px 2px #051d5b);
-
+  filter: drop-shadow(0mm 4px 1.5px #051d5b);
 }
 
 .card.is-flipped {
@@ -172,7 +171,7 @@ p {
   height: 100%;
   color: white;
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
   backface-visibility: hidden;
   border-radius: 30px;
 }
@@ -180,11 +179,10 @@ p {
 .card__face--front {
   margin: 0;
   background-image: url(../images/base2.jpg);
-  box-shadow: 
-  -3px -3px 4px #051d5b inset,
-  3px -3px 4px #051d5b inset,
-   -3px 3px 4px #051d5b inset,
-   3px 3px 4px #051d5b inset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -3px -3px 4px #051d5b inset, 3px -3px 4px #051d5b inset,
+    -3px 3px 4px #051d5b inset, 3px 3px 4px #051d5b inset;
   border: solid 8px #fec80e;
   filter: drop-shadow(0.5mm 1mm 0.6mm #051d5b);
 }
@@ -195,6 +193,7 @@ p {
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
   backface-visibility: visible;
+  transition: opacity 200ms;
 }
 
 .card.is-flipped .card__face--back {
@@ -222,10 +221,8 @@ p {
 img {
   padding-top: 4px;
   transform: scale(0.8);
-  -webkit-filter: drop-shadow(2px 2px 0 black)
-  drop-shadow(-2px -2px 0 black);
-filter: drop-shadow(2px 2px 0 black) 
-drop-shadow(-1px -2px 0 black);
+  -webkit-filter: drop-shadow(2px 2px 0 black) drop-shadow(-2px -2px 0 black);
+  filter: drop-shadow(2px 2px 0 black) drop-shadow(-1px -2px 0 black);
 }
 
 figure img {
@@ -233,7 +230,8 @@ figure img {
 }
 
 /* stars */
-#space, .stars {
+#space,
+.stars {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -243,13 +241,12 @@ figure img {
 }
 
 .stars {
-  background-image: 
-    url(../images/type/all_tint3.png),
-    radial-gradient(2px 2px at 40px 70px, #85784d75, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #3e577e80, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #40744975, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #70414180, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #774b2385, rgba(0,0,0,0));
+  background-image: url(../images/type/all_tint3.png);
+    /* radial-gradient(2px 2px at 40px 70px, #85784d75, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 50px 160px, #3e577e80, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #40744975, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 130px 80px, #70414180, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 160px 120px, #774b2385, rgba(0, 0, 0, 0)); */
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: zoom 6s infinite;
@@ -261,7 +258,7 @@ figure img {
   animation-delay: 0s;
 }
 .stars:nth-child(2) {
-  background-position: 20% 60%;
+  background-position: -30% 60%;
   animation-delay: 1s;
 }
 .stars:nth-child(3) {
@@ -282,7 +279,7 @@ figure img {
     opacity: 0;
     transform: scale(0.5);
     animation-timing-function: ease-in;
-  } 
+  }
   85% {
     opacity: 1;
     transform: scale(2.8);
