@@ -106,6 +106,9 @@ figcaption {
   top: 250px; left: 0; right: 0; bottom: 0;
 }
 
+.cardpack::-webkit-scrollbar {
+  display: none;
+}
 
 .pokeContainer {
   display: grid;
