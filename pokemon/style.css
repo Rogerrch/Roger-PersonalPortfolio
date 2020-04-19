@@ -178,7 +178,7 @@ p {
 
 .card__face--front {
   margin: 0;
-  background-image: url(../images/base2.jpg);
+  background-image: url(../images/base.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: -3px -3px 4px #051d5b inset, 3px -3px 4px #051d5b inset,
@@ -233,8 +233,8 @@ figure img {
 #space,
 .stars {
   overflow: hidden;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 150px;
   bottom: 0;
   left: 0;
   right: 0;
