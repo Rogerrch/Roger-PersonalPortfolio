@@ -65,7 +65,7 @@ function populateCardFront(pokemon) {
 }
 
 function getImageFileName(pokemon) {
-  return `../images/${pokemon.id <= 150 ? pokemon.id.toString().padStart(3, '0') : 'Thormon'}.png`;
+  return `../images/pokemons/${pokemon.id <= 150 ? pokemon.id.toString().padStart(3, '0') : 'Thormon'}.png`;
 }
 
   // function getImageFileName(pokemon) {

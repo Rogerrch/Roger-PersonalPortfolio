@@ -20,7 +20,7 @@ header {
   align-items: center;
   position: absolute;
   background-color: #051d5b;
-  background-image: url(../images/starburst.png);
+  background-image: url(../images/pUI/starburst.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,7 +181,7 @@ p {
 
 .card__face--front {
   margin: 0;
-  background-image: url(../images/base.jpg);
+  background-image: url(../images/pUI/base.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: -3px -3px 4px #051d5b inset, 3px -3px 4px #051d5b inset,
@@ -192,7 +192,7 @@ p {
 
 .card__face--back {
   margin: 0;
-  background-image: url(../images/back1.jpg);
+  background-image: url(../images/pUI/back1.jpg);
   transform: rotateY(180deg);
   border: solid 8px #fec80e;
   backface-visibility: visible;
@@ -244,7 +244,7 @@ figure img {
 }
 
 .stars {
-  background-image: url(../images/type/all_tint3.png);
+  background-image: url(../images/pUI/all_tint3.png);
     /* radial-gradient(2px 2px at 40px 70px, #85784d75, rgba(0, 0, 0, 0)),
     radial-gradient(2px 2px at 50px 160px, #3e577e80, rgba(0, 0, 0, 0)),
     radial-gradient(2px 2px at 90px 40px, #40744975, rgba(0, 0, 0, 0)),
