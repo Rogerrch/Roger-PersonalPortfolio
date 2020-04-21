@@ -87,6 +87,26 @@ figcaption {
   border: solid 2px #2c64b7;
 }
 
+#startButton:active {
+ background-color: #c3e4ee;
+ border-radius: 5px;
+ box-shadow: 
+ -3px -3px 4px #73d8f7 inset, 
+ 3px -3px 4px #73d8f7 inset,
+ -3px 3px 4px #73d8f7 inset, 
+ 3px 3px 4px #73d8f7 inset;
+ color: #b46113;
+ border: solid 2px #2c64b7;
+ text-shadow: 
+ -1px -1px 1px #73d8f7, 
+ 1px -1px 1px #73d8f7, 
+ -1px 1px 1px #73d8f7,
+    1px 1px 1px #73d8f7;
+    filter: drop-shadow(0.2mm 1mm .6mm #051d5b);
+}
+
+
+
 #newButton {
   all: unset;
   background-color: #73a8f7;
@@ -96,6 +116,24 @@ figcaption {
     -2px 2px 0px #051d5b inset, 2px 2px 0px #051d5b inset;
   border: solid 2px #2c64b7;
 }
+
+#newButton:active {
+  background-color: #c3e4ee;
+  border-radius: 5px;
+  box-shadow: 
+  -3px -3px 4px #73d8f7 inset, 
+  3px -3px 4px #73d8f7 inset,
+  -3px 3px 4px #73d8f7 inset, 
+  3px 3px 4px #73d8f7 inset;
+  color: #b46113;
+  border: solid 2px #2c64b7;
+  text-shadow: 
+  -1px -1px 1px #73d8f7, 
+  1px -1px 1px #73d8f7, 
+  -1px 1px 1px #73d8f7,
+     1px 1px 1px #73d8f7;
+     filter: drop-shadow(0.2mm 1mm .6mm #051d5b);
+ }
 
 /*card mat*/
 
