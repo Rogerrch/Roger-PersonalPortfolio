@@ -252,8 +252,9 @@ p {
 
 .card__face h4 {
   font-family: 'Noto Sans JP', sans-serif;
-  position: relative;
-  top: 140px;
+  position: absolute;
+  bottom: 6px;
+  left: 25px;
   text-align: center;
   list-style-type: square;
   color: black;
