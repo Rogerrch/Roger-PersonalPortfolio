@@ -1,27 +1,39 @@
-* {
-  box-sizing: border-box;
-}
+
 
 :root {
-box-sizing: border-box;
 background-color: #101010;
 margin: 0;
 padding: 0;
 }
 
+#wrapper {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #headcase {
   background-color: #101010;
+  background-image: url(../images/ESBOpeningCrawl3.png);
+  max-width: 1800;
+  height: 200px;
+  position: fixed;
+  z-index: 10;
+}
+.crawl {
+ 
 }
 header {
   display: flex;
   justify-content: center;
   color: #27a1e3;
   font-family: "Libre Franklin";
-  margin-bottom: 1rem;
+  height: 200px;
+  
 }
 
 .SW_logo {
-  min-width: 400px;
+  transform: scale(0.7);
 }
 
 h1 {
@@ -56,6 +68,13 @@ a> img {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  border-bottom: solid 2px #f0e704;
+  margin-bottom: 10px; 
+  background-color: #101010;
+}
+
+.navEffect {
+height: 56px;
 }
 
 Button {
@@ -71,7 +90,7 @@ Button {
 /*button states*/
 #maleButton {
   border: solid 2px #7b8da5;
-  border-radius: 35px 0px 0px 5px;
+  border-radius: 5px 0px 0px 25px;
 }
 #maleButton:hover {
   background-color: #27a1e3;
@@ -107,7 +126,7 @@ Button {
 }
 #otherButton {
   border: solid 2px #7b8da5;
-  border-radius: 0px 35px 5px 0px;
+  border-radius: 0px 5px 25px 0px;
 }
 #otherButton:hover {
   background-color: #27a1e3;
@@ -129,6 +148,7 @@ Button {
 /*button states*/
 
 .gallery {
+  padding-top: 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

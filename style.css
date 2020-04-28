@@ -3,6 +3,14 @@
   padding: 0;
   scroll-behavior: smooth ;
 }
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.SW_logo {
+margin-top: 10px;
+}
 
 /* Selects any <a> element when "hovered" */
 #navbar a:hover {
@@ -110,6 +118,7 @@ h2 {
 
 #project-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #101010;
 }
