@@ -6,7 +6,13 @@ startButton.addEventListener('click', () => {
 
 let newButton = document.querySelector('#newButton')
 newButton.addEventListener('click', () => {
-  addPokemon()
+  const pokemonRect = addPokemon()
+  console.log(pokemonRect)
+  window.scrollTo({
+    top: pokemonRect.top,
+    left: pokemonRect.left,
+    behavior: 'smooth'
+  })
 })
 
 async function getAPIData(url) {
@@ -49,6 +55,8 @@ function populatePokeCard(singlePokemon) {
     pokeCard.appendChild(pokeBack)
     pokeScene.appendChild(pokeCard)
     pokeContainer.appendChild(pokeScene)
+    cardpack.appendChild(pokeContainer)
+    return pokeScene.getBoundingClientRect()
 }
 
 function populateCardFront(pokemon) {
@@ -113,11 +121,20 @@ class Pokemon {
 }
 
 function addPokemon() {
-  let newPokemon = new Pokemon(50, 25, 'Thoremon', [
+  let newPokemon = new Pokemon(150, 25, 'Thoremon', [
     {
-        ability:
-          { name: 'Thunder Belly' }
-    }], [
+      ability:
+        { name: 'Thunder Belly' }
+    },
+    {
+      ability:
+        { name: 'Lightining Fingers' }
+    },
+    {  ability:
+        { name: 'Charged Comment' }
+    }
+  ],
+    [
       {
         move: {
           name: "Breaking-Wind"
@@ -129,5 +146,5 @@ function addPokemon() {
         ]
       }
     ])
-  populatePokeCard(newPokemon)
+    return populatePokeCard(newPokemon)
 }

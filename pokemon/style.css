@@ -50,7 +50,6 @@ figcaption {
   position: relative;
   bottom: 40px;
   height: 10px;
-  max-width: 200;
   text-shadow: -2px -2px 0px #2c64b7, 2px -2px 0px #2c64b7, -2px 2px 0px #2c64b7,
     2px 2px 0px #2c64b7;
 }
