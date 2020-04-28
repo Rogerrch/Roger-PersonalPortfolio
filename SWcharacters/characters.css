@@ -1,16 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
 box-sizing: border-box;
 background-color: #101010;
+margin: 0;
+padding: 0;
 }
 
+#headcase {
+  background-color: #101010;
+}
 header {
   display: flex;
   justify-content: center;
-  background-color: #101010;
   color: #27a1e3;
   font-family: "Libre Franklin";
-  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.SW_logo {
+  min-width: 400px;
 }
 
 h1 {
@@ -44,6 +55,7 @@ a> img {
 .nav {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 Button {
